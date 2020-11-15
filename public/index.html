@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Rate</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container py-5">
+        <form action="/getRate" method="get" class="form col-12 col-md-5">
+            <h2>Calculate Rate</h2>
+            <div class="form-group mt-4">
+                <label for="">Package Weight <span class="text-muted">(Insert weight in ozces)</span></label>
+                <input type="text" class="form-control" name="weight">
+            </div>
+            <div class="form-group mt-4">
+                <label for="">Shipping Type</label>
+                <select name="type" id="" class="form-control">
+                    <option value="stamped">Letters (Stamped)</option>
+                    <option value="metered">Letters (Metered)</option>
+                    <option value="flats">Large Envelopes (Flats)</option>
+                    <option value="firstClass">First-Class Package Service-Retail</option>
+                </select>
+            </div>
+            <input type="submit" value="Calculate Rate" class="btn btn-primary mt-3">
+        </form>
+    </div>
+</body>
+
+</html>
